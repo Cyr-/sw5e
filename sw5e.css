@@ -1762,7 +1762,7 @@
   resize: none;
 }
 .sw5e.sheet.actor.character .biography {
-  max-width: calc(-80%);
+  max-width: calc(100% - 180px);
 }
 /* ----------------------------------------- */
 /*  Basic Structure                          */
