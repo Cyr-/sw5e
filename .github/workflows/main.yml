@@ -12,6 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
 
     - name: Compile with Gulp
       uses: elstudio/actions-js-build/build@v2
@@ -19,4 +21,4 @@ jobs:
     - name: Commit changes
       uses: elstudio/actions-js-build/commit@v3
       with:
-        commitMessage: Regenerate css 
+        commitMessage: Regenerate css
